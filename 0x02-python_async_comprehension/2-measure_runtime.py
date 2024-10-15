@@ -6,6 +6,7 @@ import time
 
 async_comprehension = __import__("1-async_comprehension").async_comprehension
 
+
 async def measure_runtime():
     """measure runtime"""
     list = [
@@ -16,7 +17,7 @@ async def measure_runtime():
     ]
 
     start_time = time.time()
-    
+
     await asyncio.gather(*list)
 
     end_time = time.time()
